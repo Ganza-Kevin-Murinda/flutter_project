@@ -55,10 +55,10 @@ class WelcomeScreen extends StatelessWidget {
                 alignment: Alignment.bottomRight,
                 child: Row(
                   children: [
-                     Expanded(
+                     const Expanded(
                       child: WelcomeButton(
                         buttonText: 'Sign in',
-                        onTap: SigninScreen(),
+                        onTap: SignInScreen(),
                         color: Colors.transparent,
                         textColor: Colors.white,
                       ),

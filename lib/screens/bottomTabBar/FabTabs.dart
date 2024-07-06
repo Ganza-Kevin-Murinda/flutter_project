@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_project/screens/calculator.dart';
 import 'package:flutter_project/screens/signin_screen.dart';
@@ -33,7 +35,7 @@ class _FabtabsState extends State<Fabtabs> {
 
   final List<Widget> pages = [
     WelcomeScreen(),
-    SigninScreen(),
+    SignInScreen(),
     SignUpScreen(),
     Calculator()
   ];
@@ -42,7 +44,7 @@ class _FabtabsState extends State<Fabtabs> {
 
   @override
   Widget build(BuildContext context) {
-    Widget currentScreen = currentIndex == 0 ? WelcomeScreen() : currentIndex == 1 ? SigninScreen() : currentIndex == 2 ? SignUpScreen():Calculator();
+    Widget currentScreen = currentIndex == 0 ? WelcomeScreen() : currentIndex == 1 ? SignInScreen() : currentIndex == 2 ? SignUpScreen():Calculator();
     return  Scaffold(
       body: PageStorage(
         child: currentScreen,
@@ -97,7 +99,7 @@ class _FabtabsState extends State<Fabtabs> {
                     minWidth: 50,
                     onPressed: (){
                       setState(() {
-                        currentScreen = SigninScreen();
+                        currentScreen = SignInScreen();
                         currentIndex = 1;
                       });
                     },
