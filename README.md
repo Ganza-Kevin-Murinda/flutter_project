@@ -20,4 +20,4 @@ This Flutter project provides a modern and user-friendly interface with the foll
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/Ganza-Kevin-Murinda/flutter_project.git)
